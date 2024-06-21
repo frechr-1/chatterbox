@@ -40,7 +40,9 @@ jobs:
           fi
 
       - name: Build the React app
-        run: npm run build
+        run: |
+          npm run build
+          npm run postbuild
 
       - name: Deploy to GitHub Pages
         run: |
