@@ -17,8 +17,7 @@
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "build": "react-scripts build",
-    "postbuild": "node fix-paths.js",
+    "build": "react-scripts build", 
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
