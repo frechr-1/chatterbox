@@ -7,7 +7,7 @@ const indexPath = path.join(buildDir, 'index.html');
 let indexContent = fs.readFileSync(indexPath, 'utf8');
 
 // Replace absolute paths with relative paths
-indexContent = indexContent.replace(/\/chatterbox\//g, '/chatterbox/chatterbox/');
+indexContent = indexContent.replace(/\/chatterbox\//g, './');
 
 // Write the changes back to the file
 fs.writeFileSync(indexPath, indexContent, 'utf8');
