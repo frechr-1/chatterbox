@@ -28,6 +28,11 @@ jobs:
       - name: Build the React app
         run: npm run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "fredrik.christensen@no.experis.com"
+          git config --global user.name "Fredrik Christensen"
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
