@@ -30,9 +30,14 @@ jobs:
         with:
           node-version: '20' # Use latest LTS
 
-      - name: Install dependencies
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
-        run: npm install
+      - name: Check for react-scripts in cache
+        run: |
+          if [ -d "node_modules/react-scripts" ]; then
+            echo "react-scripts found in cache";
+          else
+            echo "react-scripts not found in cache";
+            npm install
+          fi
 
       - name: Build the React app
         run: npm run build
