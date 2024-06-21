@@ -12,6 +12,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   }, 
+  "homepage": "https://frechr-1.github.io/chatterbox",
   "scripts": {
     "eject": "react-scripts eject",
     "start": "react-scripts start",
