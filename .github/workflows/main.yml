@@ -1,6 +1,5 @@
 name: CI/CD for React App
 
-# Trigger the workflow on push or pull request events to the main branch
 on:
   push:
     branches:
@@ -10,15 +9,15 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-      
+        uses: actions/checkout@v4
+
       - name: Cache Node.js modules
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/package.json') }}
@@ -26,24 +25,42 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '20' # Use latest LTS
 
       - name: Install dependencies
         run: npm install
 
+      - name: Run tests
+        run: npm test
+
       - name: Build the React app
         run: npm run build
 
-      - name: Configure Git
-        run: |
-          git config --global user.email "fredrik.christensen@no.experis.com"
-          git config --global user.name "Fredrik Christensen"
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Deploy to GitHub Pages
         run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           git remote set-url origin https://${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/${{ github.repository }}
           npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  notify:
+    runs-on: ubuntu-latest
+    needs: deploy
+
+    steps:
+      - name: Send notification
+        run: |
+          # Add your notification logic here
+          echo "Deployment successful!"
