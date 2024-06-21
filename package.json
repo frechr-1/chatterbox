@@ -14,10 +14,11 @@
   },
   "homepage": "https://frechr-1.github.io/chatterbox",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "build": "react-scripts build",
+    "postbuild": "node fix-paths.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
