@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d144be8.css",
-    "main.js": "/static/js/main.cb14607f.js",
-    "static/js/453.94c59071.chunk.js": "/static/js/453.94c59071.chunk.js",
-    "static/media/iglogo.svg": "/static/media/iglogo.62f1f449f3981a06bc61112f414dc8bd.svg",
-    "static/media/glogo.svg": "/static/media/glogo.27b0128da8ab916d69b9d29f956d9efc.svg",
-    "index.html": "/index.html",
-    "static/media/fblogo.svg": "/static/media/fblogo.312468c67291593943dbb77faefdc512.svg",
-    "static/media/x.svg": "/static/media/x.b5edaf63f674669c388740579ab2a640.svg",
-    "main.2d144be8.css.map": "/static/css/main.2d144be8.css.map",
-    "main.cb14607f.js.map": "/static/js/main.cb14607f.js.map",
-    "453.94c59071.chunk.js.map": "/static/js/453.94c59071.chunk.js.map"
+    "main.css": "/chatterbox/static/css/main.2d144be8.css",
+    "main.js": "/chatterbox/static/js/main.ddb6fd9d.js",
+    "static/js/453.94c59071.chunk.js": "/chatterbox/static/js/453.94c59071.chunk.js",
+    "static/media/iglogo.svg": "/chatterbox/static/media/iglogo.62f1f449f3981a06bc61112f414dc8bd.svg",
+    "static/media/glogo.svg": "/chatterbox/static/media/glogo.27b0128da8ab916d69b9d29f956d9efc.svg",
+    "index.html": "/chatterbox/index.html",
+    "static/media/fblogo.svg": "/chatterbox/static/media/fblogo.312468c67291593943dbb77faefdc512.svg",
+    "static/media/x.svg": "/chatterbox/static/media/x.b5edaf63f674669c388740579ab2a640.svg",
+    "main.2d144be8.css.map": "/chatterbox/static/css/main.2d144be8.css.map",
+    "main.ddb6fd9d.js.map": "/chatterbox/static/js/main.ddb6fd9d.js.map",
+    "453.94c59071.chunk.js.map": "/chatterbox/static/js/453.94c59071.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d144be8.css",
-    "static/js/main.cb14607f.js"
+    "static/js/main.ddb6fd9d.js"
   ]
 }
