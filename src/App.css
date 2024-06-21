@@ -1,17 +1,22 @@
-*{
+.dbg{
   border: 1px solid red;
 }
+
 ul.no-bullets {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
 }
 
-ul.horizontal {
+.horizontal {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row  wrap;
   justify-content: space-evenly;
   width: 100%;
+}
+
+ul.shrink {
+  flex-shrink: 1;
 }
 
 .bg-light {
@@ -34,8 +39,16 @@ ul.horizontal {
   flex-flow: row nowrap;
 }
 
+.Header-nav-main-group{
+  min-height: 50vh;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
 
 .App-main {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   min-height: max-content;
 }
 
