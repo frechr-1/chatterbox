@@ -18,7 +18,8 @@
     "test": "react-scripts test",
     "build": "react-scripts build", 
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "postbuild":"node fix-paths.js"
   },
   "eslintConfig": {
     "extends": [
