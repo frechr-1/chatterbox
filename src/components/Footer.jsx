@@ -1,28 +1,11 @@
-import {ReactComponent as XLogo} from "./x.svg";
-import {ReactComponent as GoogleLogo} from "./glogo.svg";
-import {ReactComponent as InstagramLogo} from "./iglogo.svg";
-import {ReactComponent as FacebookLogo} from "./fblogo.svg";
+import { ReactComponent as XLogo } from "../x.svg";
+import { ReactComponent as GoogleLogo } from "../glogo.svg";
+import { ReactComponent as InstagramLogo } from "../iglogo.svg";
+import { ReactComponent as FacebookLogo } from "../fblogo.svg";
 
-import './App.css'; 
-function App() {
-  return (
-    <div className="App ">
-      <div className="Header-nav-main-group  ">
-        <div className="Header-nav-group  ">
-          <header className="App-header">ChatterBox</header>
-          <nav className="App-nav">
-            <ul className="no-bullets horizontal">
-              <li>Home</li>
-              <li>Feeds</li>
-              <li>Groups</li>
-            </ul>
-          </nav>
-        </div>
-        <main className="App-main  ">
-          <p>Welcome to ChatterBox!</p>
-        </main>
-      </div>
-      <footer className="App-footer  ">
+function Footer (props) {
+    return (
+      <footer className="chatterbox-footer  ">
         <ul className="no-bullets horizontal">
           <li>
             <h4>Contact us</h4>
@@ -98,9 +81,8 @@ function App() {
             </ul>
           </li>
         </ul>
+        {props.children}
       </footer>
-    </div>
-  );
-}
-
-export default App;
+    );
+  };
+  export default Footer;
