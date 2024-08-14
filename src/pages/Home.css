@@ -1,0 +1,41 @@
+.dbg {
+  border: 1px solid red;
+}
+
+.box-container { 
+  justify-self: center;
+  align-self: center;
+  display: flex; 
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+ul.no-bullets {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.horizontal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+ul.shrink {
+  flex-shrink: 1;
+}
+
+.bg-light {
+  background: #545c6c;
+} 
+
+@media only screen and (max-width: 600px) {
+  .box-container { 
+    display: flex; 
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+  }
+}
+

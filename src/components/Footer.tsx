@@ -1,28 +1,8 @@
-import {ReactComponent as XLogo} from "./x.svg";
-import {ReactComponent as GoogleLogo} from "./glogo.svg";
-import {ReactComponent as InstagramLogo} from "./iglogo.svg";
-import {ReactComponent as FacebookLogo} from "./fblogo.svg";
+import React from 'react'; 
 
-import './App.css'; 
-function App() {
-  return (
-    <div className="App ">
-      <div className="Header-nav-main-group  ">
-        <div className="Header-nav-group  ">
-          <header className="App-header">ChatterBox</header>
-          <nav className="App-nav">
-            <ul className="no-bullets horizontal">
-              <li>Home</li>
-              <li>Feeds</li>
-              <li>Groups</li>
-            </ul>
-          </nav>
-        </div>
-        <main className="App-main  ">
-          <p>Welcome to ChatterBox!</p>
-        </main>
-      </div>
-      <footer className="App-footer  ">
+const Footer = () => {
+    return (
+      <footer className="chatterbox-footer  ">
         <ul className="no-bullets horizontal">
           <li>
             <h4>Contact us</h4>
@@ -43,22 +23,22 @@ function App() {
             <ul className="no-bullets horizontal shrink">
               <li>
                 <a href="https://x.com/">
-                  <XLogo />
+                   X
                 </a>
               </li>
               <li>
                 <a href="https://google.com/">
-                  <GoogleLogo />
+                   G
                 </a>
               </li>
               <li>
                 <a href="https://instagram.com/">
-                  <InstagramLogo />
+                   I
                 </a>
               </li>
               <li>
                 <a href="https://facebook.com/">
-                  <FacebookLogo />
+                   F
                 </a>
               </li>
             </ul>
@@ -97,10 +77,8 @@ function App() {
               <li>Cookie settings</li>
             </ul>
           </li>
-        </ul>
+        </ul> 
       </footer>
-    </div>
-  );
-}
-
-export default App;
+    );
+  };
+  export default Footer;
