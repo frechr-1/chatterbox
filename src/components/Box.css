@@ -1,0 +1,46 @@
+.box { 
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    text-align: center;
+    border: solid 1px #1b151c;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-bottom: 5vh; 
+    width: 20vw;
+    height: auto;
+    align-items: center;
+}
+
+.box-name {
+    margin-bottom: -3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.box p { 
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: wrap;
+}
+
+.box button {
+    background-color: transparent;
+    border: none;
+    color: magenta;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1rem;
+}
+
+.box button:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .box {  
+        width:  100% ; 
+    }
+  }

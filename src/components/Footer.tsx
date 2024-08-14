@@ -1,9 +1,6 @@
-import { ReactComponent as XLogo } from "../x.svg";
-import { ReactComponent as GoogleLogo } from "../glogo.svg";
-import { ReactComponent as InstagramLogo } from "../iglogo.svg";
-import { ReactComponent as FacebookLogo } from "../fblogo.svg";
+import React from 'react'; 
 
-function Footer (props) {
+const Footer = () => {
     return (
       <footer className="chatterbox-footer  ">
         <ul className="no-bullets horizontal">
@@ -26,22 +23,22 @@ function Footer (props) {
             <ul className="no-bullets horizontal shrink">
               <li>
                 <a href="https://x.com/">
-                  <XLogo />
+                   X
                 </a>
               </li>
               <li>
                 <a href="https://google.com/">
-                  <GoogleLogo />
+                   G
                 </a>
               </li>
               <li>
                 <a href="https://instagram.com/">
-                  <InstagramLogo />
+                   I
                 </a>
               </li>
               <li>
                 <a href="https://facebook.com/">
-                  <FacebookLogo />
+                   F
                 </a>
               </li>
             </ul>
@@ -80,8 +77,7 @@ function Footer (props) {
               <li>Cookie settings</li>
             </ul>
           </li>
-        </ul>
-        {props.children}
+        </ul> 
       </footer>
     );
   };
