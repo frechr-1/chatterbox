@@ -1,0 +1,18 @@
+
+.chatbox-header {
+    padding-left: 1vw;
+    padding-top: 1vw;
+    display: flex;
+    flex-flow: column;
+    font-size: calc(clamp(16px, 2vmin, 25px));
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .chatbox-header strong {
+    color: #ba69ce;
+  }
+  
+  .chatbox-header small {
+    color: #60aeb4;
+  }
+  

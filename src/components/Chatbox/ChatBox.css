@@ -1,0 +1,14 @@
+.chatbox-item {
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+    box-shadow: -0.1em -0.1em 0.7em #1b151c; 
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .chatbox-item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }

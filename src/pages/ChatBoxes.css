@@ -1,0 +1,13 @@
+.chatbox-list {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: max-content;
+  gap: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+hr { 
+    border: #1b151c 1px solid; 
+    opacity: 20%;
+}

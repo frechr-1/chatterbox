@@ -1,8 +1,8 @@
 import React from 'react'; 
 import Home from './pages/Home'
 import Footer from './components/Footer';
-import ChatBoxes from './components/ChatBoxes';
-import ChatBox from './components/ChatBox';   
+import ChatBoxes from './pages/ChatBoxes';
+import LiveChatBox from './pages/LiveChatBox';   
 import {
   createBrowserRouter,
   RouterProvider 
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/box/:boxId/chatbox/:chatboxId",
-    element: <ChatBox/>
+    element: <LiveChatBox/>
   }
 ]);  
 

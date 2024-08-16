@@ -1,0 +1,25 @@
+
+.chatbox-body {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-bottom: 1em;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .chatbox-says p {
+    font-size: clamp(14px, 2vmin, 25px);
+  }
+  
+  .chatbox-body img {
+    padding-top: 1vh;
+    width: clamp(50px, 20vw, 30%);
+    height: clamp(50px, 20vw, 30%);
+    object-fit: cover;
+    cursor: pointer;
+    transition: width 0.3s, height 0.3s;
+  }
+  
+  .chatbox-item img.expanded {
+    width: max(50px, 100%);
+    height: max(50px, 100%);
+  }

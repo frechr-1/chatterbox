@@ -1,0 +1,79 @@
+.chatbox-comments {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.chatbox-comments.expanded {
+  max-height: 1000px;
+  /* You can adjust this value based on expected content size */
+}
+
+.toggle-comments {
+  color: #6d8cc8;
+  cursor: pointer;
+}
+
+.reply-section button {
+  color: #6d8cc8;
+  background-color: transparent;
+  border: none;
+  font-size: medium;
+  text-decoration: underline;
+  padding-left: 1vw;
+}
+.reply-section.padded {
+  padding-left: 1vw;
+}
+
+.reply-section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.reply-form { 
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 1vw;
+}
+
+.form-and-btn{ 
+  max-width: fit-content;
+  display: flex;
+  flex-flow: column wrap;
+  justify-items: baseline;
+  align-items: flex-end;
+}
+
+.reply-form-labels {
+  gap: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.reply-form-inputs {
+  gap: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.reply-form-btn {  
+padding-right: 1vw;
+}
+
+.enter-btn {
+  width: max-content;
+  height: min-content;
+  align-self: flex-end;
+  margin-top: 1vh;
+  padding: 5px;
+  margin-bottom: 2vh; 
+}
+
+button:hover {
+  cursor: pointer;
+}

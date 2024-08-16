@@ -1,14 +1,9 @@
-import React, { useState, useRef, useEffect } from "react"; // Updated
+import React from "react"; 
 import "./Box.css";
-
-export interface GetBoxResponse {
-    id: number;
-    boxName: string;
-    agenda: string;
-  } 
+import { GetBox } from "../api/chatterbox";
 
 interface BoxProps {
-  data: GetBoxResponse;
+  data: GetBox;
   handleClick: (id: number) => void;
 }
 

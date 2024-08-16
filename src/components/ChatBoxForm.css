@@ -1,0 +1,38 @@
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    min-width: fit-content;
+  }
+  
+  .chatbox-form {
+    align-self: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+  }
+  
+  .chatbox-form-labels {
+    display: flex;
+    padding-right: min(100px, 10vw);
+    flex-flow: column wrap;
+  }
+  
+  .chatbox-form-inputs {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  .chatbox-form-inputs textarea {
+    width: max(200px, 20vw);
+    height: min(75px, 10vh);
+  }
+  .chatbox-creation-header {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  
